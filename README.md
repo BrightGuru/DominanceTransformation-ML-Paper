@@ -6,7 +6,7 @@ The genetic architecture of a trait plays a vital role in the predictive ability
 
 This study assessed two models integrating ML and classical statistical methods, incorporating a novel locus-specific weighted dominance effect transformation matrix for genomic prediction in hybrid maize.
 
-#A total of five models were compared: 
+# A total of five models were compared: 
 (1) XGBoost combined with locus-specific weighted dominance effects, 
 (2) XGBoost only, 
 (3) GBLUP model with additive effects only, 
@@ -15,8 +15,8 @@ This study assessed two models integrating ML and classical statistical methods,
 
 The models were evaluated using two simulated maize populations (one polygenic scenario and the other, an oligogenic scenario; in both scenarios, the dominance varied from 0% to 40%) and a real maize hybrid population (G2F data (2018 - 2021)). Below is a step-by-step process for all the analyses on the G2F data with the Yield trait.
 
-We start with the #Genotype analysis.
-Then, the #Phenotype analysis.
+We start with the Genotype analysis.
+Then, the Phenotype analysis.
 GBLUP combined with locus-specific weighted dominance effects.
 XGBoost combined with locus-specific weighted dominance effects,
 
