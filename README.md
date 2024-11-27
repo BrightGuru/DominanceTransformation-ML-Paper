@@ -11,7 +11,9 @@ This study assessed two models integrating ML and classical statistical methods,
 4. GBLUP model, including additive and dominance effects, 
 5. GBLUP combined with locus-specific weighted dominance effects.
 
-The models were evaluated using two simulated maize populations (one polygenic scenario and the other, an oligogenic scenario; in both scenarios, the dominance varied from 0% to 40%) and a real maize hybrid population (G2F data (2018 - 2021)). Below is a step-by-step process for all the analyses done. **Please follow the steps below to reproduce the results from our work**.
+The models were evaluated using two simulated maize populations (one polygenic scenario and the other, an oligogenic scenario; in both scenarios, the dominance varied from 0% to 40%) and a real maize hybrid population (G2F data (2018 - 2021)). Below is a step-by-step process for all the analyses done. 
+
+## Please follow the steps below to reproduce the results from our work with the G2F data
 
 **Genotypic analysis**
 1. download the genomic file from the g2f site
@@ -42,6 +44,9 @@ To run GBLUP models, use the scripts in the **GBLUP_models** directory.
 
 To run ML models, use the scripts in the **ML_models** directory.
 - Use *XGBoost_model_script.py* for XGBoost only.
-- Use *XGBoostdom_model_script.py* for XGBoost combined with locus-specific weighted dominance effects.  
+- Use *XGBoostdom_model_script.py* for XGBoost combined with locus-specific weighted dominance effects.
+
+## To reproduce the results from our work with the simulated data, Please follow the steps below
+
 
 
