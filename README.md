@@ -1,7 +1,5 @@
 # Predicting Maize Hybrid Performance with Machine Learning and a Locus-Specific Degree of Dominance Transformation
 
-## 1. Introduction
-
 The genetic architecture of a trait plays a vital role in the predictive ability of genomic models. While classical models like genomic best linear unbiased prediction (GBLUP) dominate plant breeding, machine learning (ML) methods are gaining traction for their superior handling of non-linear effects.
 
 This study assessed two models integrating ML and classical statistical methods, incorporating a novel locus-specific weighted dominance effect transformation matrix for genomic prediction in hybrid maize.
@@ -13,9 +11,10 @@ This study assessed two models integrating ML and classical statistical methods,
 4. GBLUP model, including additive and dominance effects, 
 5. GBLUP combined with locus-specific weighted dominance effects.
 
-The models were evaluated using two simulated maize populations (one polygenic scenario and the other, an oligogenic scenario; in both scenarios, the dominance varied from 0% to 40%) and a real maize hybrid population (G2F data (2018 - 2021)). Below is a step-by-step process for all the analyses done.
+The models were evaluated using two simulated maize populations (one polygenic scenario and the other, an oligogenic scenario; in both scenarios, the dominance varied from 0% to 40%) and a real maize hybrid population (G2F data (2018 - 2021)). Below is a step-by-step process for all the analyses done. *Please follow the steps below to reproduce the results from our work*.
 
 We start with the Genotype analysis.
+
 Then, the Phenotype analysis.
 GBLUP combined with locus-specific weighted dominance effects.
 XGBoost combined with locus-specific weighted dominance effects,
