@@ -1,9 +1,9 @@
 #steps to filter the VCF file for use for my degree of dominance analysis
 
 1. download the genomic file from the g2f site
-
+```shell
 wget https://de.cyverse.org/anon-files//iplant/home/shared/commons_repo/curated/GenomesToFields_GenotypeByEnvironment_PredictionCompetition_2023/Training_data/5_Genotype_Data_All_Years.vcf.zip
-
+```
 2. Unzip the VCF file
 
 unzip 5_Genotype_Data_All_Years.vcf.zip 
