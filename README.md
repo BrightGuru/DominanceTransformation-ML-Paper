@@ -31,7 +31,7 @@ Note. For bash codes, see *SNP_filtering.sh*
 
 **Phenotypic analysis**
 
-The phenotypic analysis includes outlier analysis, best linear unbiased estimation (BLUES) with replicate as fixed effects, BLUES with Environment(Field location and Year) & hybrid as random effects, Heritability and Variance. the codes for these analyses can be found in *phenotypic_analyses_G2F_Phenotype.R*.
+The phenotypic analysis includes outlier analysis, best linear unbiased estimation (BLUES) with replicate as fixed effects, BLUES with Environment(Field location and Year) and hybrid as random effects, and Heritability and Variance. The codes for these analyses can be found in *phenotypic_analyses_G2F_Phenotype.R*.
 
 **GBLUP models**
 
@@ -48,5 +48,20 @@ To run ML models, use the scripts in the **ML_models** directory.
 
 ## To reproduce the results from our work with the simulated data, Please follow the steps below
 
+**Simulating the Polygenic and oligogenic scenarios**
+To simulate the Polygenic scenarios use *HybridSim_Polyscript.R* and *HybridSim_Oligoscript.R* for the Oligogenic scenarios.
+
+**GBLUP models**
+
+To run GBLUP models, use the scripts in the **Simulated_GBLUP_Model** directory.  
+- Use *Sim_add_GBLUP.R* for GBLUP with additive effects only use.  
+- Use *Sim_adddom_GBLUP.R* for the GBLUP model, including additive and dominance effects. 
+- Use *Sim_com_GBLUP.R* for GBLUP combined with locus-specific weighted dominance effects.
+
+**Machine learning Models**
+
+To run ML models, use the scripts in the **Simulated_ML_Model** directory.
+- Use *sim_worker_XGBoost.py* for XGBoost only.
+- Use *sim_worker_XGBoostDom.py* for XGBoost combined with locus-specific weighted dominance effects.
 
 
