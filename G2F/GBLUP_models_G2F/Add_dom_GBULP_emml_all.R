@@ -46,7 +46,7 @@ Genomic_dom_matrix <- Gmatrix(SNPmatrix=as.matrix(SNP_data_G), missingValue=-9,
                               maf=0.05, method="Vitezica")
 
 
-#5 folds cross validation 20 times ####
+#5 folds cross validation 10 times ####
 
 #1. MEAN ABSOLUTE PERCENTAGE ERROR (MAPE)
 MAPE = function(y_actual,y_predict){
@@ -85,7 +85,7 @@ registerDoMC(cores = n.cpus)
 
 All_TEN <- list()
 
-for (time in 1:20){
+for (time in 1:10){
   seed  <- 1234
   nfolds <- 5
   set.seed(seed + time)
