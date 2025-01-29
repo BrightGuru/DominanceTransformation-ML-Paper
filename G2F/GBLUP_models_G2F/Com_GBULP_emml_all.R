@@ -37,7 +37,7 @@ Pheno_Blues_2018_2021 <- Pheno_Blues_2018_2021 %>%
 SNP_data_G <- as.data.frame(SNP_data[,-1])%>%
   mutate_if(is.character, as.numeric)
 
-#5 folds cross validation 20 times ####
+#5 folds cross validation 10 times ####
 
 #1. MEAN ABSOLUTE PERCENTAGE ERROR (MAPE)
 MAPE = function(y_actual,y_predict){
@@ -79,7 +79,7 @@ registerDoMC(cores = n.cpus)
 
 All_TEN <- list()
 
-for (time in 1:5){
+for (time in 1:10){
   seed  <- 1234
   nfolds <- 5
   set.seed(seed + time)
