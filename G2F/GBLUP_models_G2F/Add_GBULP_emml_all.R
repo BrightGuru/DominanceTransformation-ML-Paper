@@ -23,7 +23,7 @@ file <- paste0("/usr/users/osatohanmwen/GP_Dom_G2Fdata/emmreml/",trait ,"_BLUES_
 Pheno_Blues_2018_2021 <- fread(file)
 
 Pheno_Blues_2018_2021 <- Pheno_Blues_2018_2021 %>%
-  mutate(Hybrid=gsub("Hybrid", "",Hybrid))
+  mutate(Hybrid=gsub("Hybrid", "", Hybrid))
 
 print(summary(unique(Pheno_Blues_2018_2021$Hybrid)))
 
@@ -44,7 +44,7 @@ Genomic_add_matrix <- Gmatrix(SNPmatrix=as.matrix(SNP_data_G),
                               maf=0.05, method="VanRaden")
 
 
-#5 folds cross validation 20 times ####
+#5 folds cross-validation 10 times ####
 
 #1. MEAN ABSOLUTE PERCENTAGE ERROR (MAPE)
 MAPE = function(y_actual,y_predict){
@@ -86,7 +86,7 @@ registerDoMC(cores = n.cpus)
 
 All_TEN <- list()
 
-for (time in 1:20){
+for (time in 1:10){
   seed  <- 1234
   nfolds <- 5
   set.seed(seed + time)
