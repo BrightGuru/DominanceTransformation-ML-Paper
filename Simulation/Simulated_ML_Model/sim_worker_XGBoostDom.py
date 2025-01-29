@@ -55,7 +55,7 @@ params_lg = {
   }
 
 Bayes_search = BayesSearchCV(
-    XGBr_clf,params_lg,n_iter=25,
+    XGBr_clf,params_lg,n_iter=20,
     n_jobs = -1,cv=3,scoring='neg_mean_squared_error',
     random_state=99,
     verbose=0)
