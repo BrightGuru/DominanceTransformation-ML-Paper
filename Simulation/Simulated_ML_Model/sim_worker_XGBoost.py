@@ -55,7 +55,7 @@ params_lg = {
   }
 
 Bayes_search = BayesSearchCV(
-    XGBr_clf,params_lg,n_iter=25,
+    XGBr_clf,params_lg,n_iter=20,
     n_jobs = -1,cv=3,scoring='neg_mean_squared_error',
     random_state=99,
     verbose=0)
@@ -66,7 +66,7 @@ Bayes_search.fit(xtrain,ytrain)
 
 print(Bayes_search.best_estimator_)
 
-#update XGBM parameters usingb the best estimator which was obtained by using BayesSearchCV.
+#update XGBM parameters using the best estimator which was obtained by using BayesSearchCV.
 
 XGBr_clf_best = Bayes_search.best_estimator_
 
@@ -76,7 +76,7 @@ y_pred_grid = XGBr_clf_best.predict(xtest)
 
 
 
-##observed and predicted dataframe
+##observed and predicted data frame
 data_pre_observed = pd.DataFrame(
     {'Observed' : ytest,
         'Predicted': y_pred_grid
