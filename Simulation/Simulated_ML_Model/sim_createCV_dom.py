@@ -37,7 +37,7 @@ outcome = Full_data[trait].values
 ##split into training and testing test and reapet 20 times
 
 # Set the number of times you want to run k-fold cross-validation
-n_repeats = 20
+n_repeats = 10
 
 # Initialize a dictionary to store the data splits
 Data_OP = {}
