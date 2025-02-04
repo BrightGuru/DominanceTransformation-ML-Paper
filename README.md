@@ -64,4 +64,4 @@ To run ML models, use the scripts in the **Simulated_ML_Model** directory.
 - Use *sim_worker_XGBoost.py* for XGBoost only.
 - Use *sim_worker_XGBoostDom.py* for XGBoost combined with locus-specific weighted dominance effects.
 
-
+**Note:** To get similar ML results for simulated and real data, ensure a similar conda environment like mine is replicated using the ML environment file *ML_environment.yml*.
